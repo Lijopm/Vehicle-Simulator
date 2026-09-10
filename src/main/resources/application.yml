@@ -1,0 +1,24 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: vehicle-simulator-service
+
+mqtt:
+  # Integrated Embedded MQTT Broker (Server)
+  server:
+    enabled: true
+    port: 1883
+    host: 0.0.0.0
+
+  # Internal Publisher Client Connection
+  broker:
+    url: ${MQTT_BROKER_URL:tcp://localhost:1883}
+    clientId: standalone-vehicle-simulator
+    username: ${MQTT_USERNAME:}
+    password: ${MQTT_PASSWORD:}
+
+simulator:
+  enabled: true
+  interval-ms: 1000

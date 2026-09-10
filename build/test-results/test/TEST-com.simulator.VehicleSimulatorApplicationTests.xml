@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.simulator.VehicleSimulatorApplicationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-10T07:32:13.801Z" hostname="LIJO" time="3.414">
+  <properties/>
+  <testcase name="testAnomalyInjection()" classname="com.simulator.VehicleSimulatorApplicationTests" time="1.043"/>
+  <testcase name="contextLoads()" classname="com.simulator.VehicleSimulatorApplicationTests" time="0.005"/>
+  <system-out><![CDATA[13:02:13.976 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.simulator.VehicleSimulatorApplicationTests]: VehicleSimulatorApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:02:14.099 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.simulator.VehicleSimulatorApplication for test class com.simulator.VehicleSimulatorApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2026-09-10T13:02:14.550+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] c.s.VehicleSimulatorApplicationTests     : Starting VehicleSimulatorApplicationTests using Java 21.0.9 with PID 30704 (started by lijop in C:\Users\lijop\.gemini\antigravity\scratch\vehicle-simulator-service)
+2026-09-10T13:02:14.551+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] c.s.VehicleSimulatorApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2026-09-10T13:02:15.366+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] io.moquette.broker.Server                : Configuring message interceptors...
+2026-09-10T13:02:15.367+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] i.m.interception.BrokerInterceptor       : Initializing broker interceptor. InterceptorIds=[]
+2026-09-10T13:02:15.370+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] io.moquette.broker.Server                : Using default SSL context creator
+2026-09-10T13:02:15.371+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] io.moquette.broker.Server                : An io.moquette.broker.security.AcceptAllAuthenticator authenticator instance will be used
+2026-09-10T13:02:15.372+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] io.moquette.broker.Server                : Authorizator policy io.moquette.broker.security.PermitAllAuthorizatorPolicy instance will be used
+2026-09-10T13:02:15.376+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] i.m.b.s.CTrieSubscriptionDirectory       : Initializing CTrie
+2026-09-10T13:02:15.377+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] i.m.b.s.CTrieSubscriptionDirectory       : Initializing subscriptions store...
+2026-09-10T13:02:15.414+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] io.moquette.broker.NewNettyAcceptor      : Netty is using NIO
+2026-09-10T13:02:15.552+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] io.moquette.broker.NewNettyAcceptor      : Server bound to host=0.0.0.0, port=1883, protocol=TCP MQTT
+2026-09-10T13:02:15.559+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] io.moquette.broker.NewNettyAcceptor      : Property websocket_port has been setted to disabled. Websocket MQTT will be disabled
+2026-09-10T13:02:15.559+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] io.moquette.broker.Server                : Moquette integration has been started successfully in 194 ms
+2026-09-10T13:02:15.560+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] c.simulator.service.EmbeddedMqttServer   : ===============================================================
+2026-09-10T13:02:15.560+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] c.simulator.service.EmbeddedMqttServer   :   EMBEDDED MQTT SERVER STARTED ON PORT 1883
+2026-09-10T13:02:15.560+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] c.simulator.service.EmbeddedMqttServer   :   Clients (Backend, etc.) can connect to tcp://localhost:1883
+2026-09-10T13:02:15.560+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] c.simulator.service.EmbeddedMqttServer   : ===============================================================
+2026-09-10T13:02:15.562+05:30 ERROR 30704 --- [vehicle-simulator-service] [      Thread-12] io.moquette.broker.Server                : Problem writing new UUID to file path: data\.moquette_uuid
+
+java.io.FileNotFoundException: data\.moquette_uuid (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[na:na]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230) ~[na:na]
+	at java.base/java.io.FileWriter.<init>(FileWriter.java:116) ~[na:na]
+	at io.moquette.broker.Server.checkOrCreateUUID(Server.java:334) ~[moquette-broker-0.17.jar:na]
+	at io.moquette.broker.Server.collectAndSendTelemetryData(Server.java:307) ~[moquette-broker-0.17.jar:na]
+	at io.moquette.broker.Server.lambda$collectAndSendTelemetryDataAsynch$0(Server.java:302) ~[moquette-broker-0.17.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-09-10T13:02:15.570+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] c.s.service.VehicleTelemetryEngine       : Vehicle Telemetry Engine started. Streaming telemetry for 20 vehicles (ENGIN_0001 to ENGIN_0020)...
+2026-09-10T13:02:15.832+05:30  INFO 30704 --- [vehicle-simulator-service] [      Thread-12] io.moquette.broker.Server                : Can't reach the telemetry collector
+2026-09-10T13:02:16.144+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] c.s.VehicleSimulatorApplicationTests     : Started VehicleSimulatorApplicationTests in 1.881 seconds (process running for 3.179)
+2026-09-10T13:02:16.167+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-3-thread-1] c.s.service.MqttPublisherService         : Simulator connecting to MQTT Broker at tcp://localhost:1883
+2026-09-10T13:02:16.582+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C->B CONNECT <null>
+2026-09-10T13:02:16.601+05:30  INFO 30704 --- [vehicle-simulator-service] [r-1789025536167] c.s.service.MqttPublisherService         : Simulator MQTT connection established (reconnect=false) to tcp://localhost:1883
+2026-09-10T13:02:16.601+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-3-thread-1] c.s.service.MqttPublisherService         : Simulator successfully connected to MQTT Broker at tcp://localhost:1883
+2026-09-10T13:02:16.650+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <1>
+2026-09-10T13:02:16.661+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <2>
+2026-09-10T13:02:16.663+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <3>
+2026-09-10T13:02:16.663+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0006': {"vehicleId":"ENGIN_0006","alertType":"OVERHEATING","value":"126.3"}
+2026-09-10T13:02:16.665+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <4>
+2026-09-10T13:02:16.667+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <5>
+2026-09-10T13:02:16.668+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <6>
+2026-09-10T13:02:16.669+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0017': {"vehicleId":"ENGIN_0017","alertType":"OVERSPEEDING","value":"119.3"}
+2026-09-10T13:02:16.670+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <7>
+2026-09-10T13:02:16.673+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <8>
+2026-09-10T13:02:16.675+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <9>
+2026-09-10T13:02:16.676+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0007': {"vehicleId":"ENGIN_0007","alertType":"OVERHEATING","value":"116.2"}
+2026-09-10T13:02:16.678+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <10>
+2026-09-10T13:02:16.679+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <11>
+2026-09-10T13:02:16.680+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0007': {"vehicleId":"ENGIN_0007","alertType":"OVERSPEEDING","value":"119.3"}
+2026-09-10T13:02:16.681+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <12>
+2026-09-10T13:02:16.683+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <13>
+2026-09-10T13:02:16.684+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <14>
+2026-09-10T13:02:16.686+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <15>
+2026-09-10T13:02:16.686+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0004': {"vehicleId":"ENGIN_0004","alertType":"OVERSPEEDING","value":"109.4"}
+2026-09-10T13:02:16.687+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <16>
+2026-09-10T13:02:16.691+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <17>
+2026-09-10T13:02:16.693+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <18>
+2026-09-10T13:02:16.695+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <19>
+2026-09-10T13:02:16.695+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0005': {"vehicleId":"ENGIN_0005","alertType":"OVERHEATING","value":"109.8"}
+2026-09-10T13:02:16.696+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <20>
+2026-09-10T13:02:16.698+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <21>
+2026-09-10T13:02:16.700+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <22>
+2026-09-10T13:02:16.700+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0016': {"vehicleId":"ENGIN_0016","alertType":"OVERHEATING","value":"100.7"}
+2026-09-10T13:02:16.702+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <23>
+2026-09-10T13:02:16.703+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <24>
+2026-09-10T13:02:16.704+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <25>
+2026-09-10T13:02:16.705+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <26>
+2026-09-10T13:02:16.707+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0019': {"vehicleId":"ENGIN_0019","alertType":"OVERHEATING","value":"107.9"}
+2026-09-10T13:02:16.709+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <27>
+2026-09-10T13:02:16.711+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <28>
+2026-09-10T13:02:16.713+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <29>
+2026-09-10T13:02:16.713+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0009': {"vehicleId":"ENGIN_0009","alertType":"OVERHEATING","value":"114.6"}
+2026-09-10T13:02:16.714+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <30>
+2026-09-10T13:02:16.716+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <31>
+2026-09-10T13:02:16.718+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <32>
+2026-09-10T13:02:16.719+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <33>
+2026-09-10T13:02:16.719+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0010': {"vehicleId":"ENGIN_0010","alertType":"OVERHEATING","value":"117.1"}
+2026-09-10T13:02:16.720+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <34>
+2026-09-10T13:02:16.722+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <35>
+2026-09-10T13:02:16.725+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <36>
+2026-09-10T13:02:16.727+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <37>
+2026-09-10T13:02:16.727+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0013': {"vehicleId":"ENGIN_0013","alertType":"OVERHEATING","value":"113.1"}
+2026-09-10T13:02:16.728+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <38>
+2026-09-10T13:02:16.729+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <39>
+2026-09-10T13:02:16.731+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <40>
+2026-09-10T13:02:16.731+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0003': {"vehicleId":"ENGIN_0003","alertType":"OVERSPEEDING","value":"104.6"}
+2026-09-10T13:02:16.733+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <41>
+2026-09-10T13:02:16.735+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <42>
+2026-09-10T13:02:16.736+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <43>
+2026-09-10T13:02:16.737+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0014': {"vehicleId":"ENGIN_0014","alertType":"OVERHEATING","value":"100.7"}
+2026-09-10T13:02:16.738+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <44>
+2026-09-10T13:02:16.742+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <45>
+2026-09-10T13:02:16.744+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <46>
+2026-09-10T13:02:16.746+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <47>
+2026-09-10T13:02:16.748+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <48>
+2026-09-10T13:02:16.748+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0012': {"vehicleId":"ENGIN_0012","alertType":"OVERHEATING","value":"100.2"}
+2026-09-10T13:02:16.749+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <49>
+2026-09-10T13:02:16.751+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <50>
+2026-09-10T13:02:16.751+05:30  INFO 30704 --- [vehicle-simulator-service] [pool-4-thread-1] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0012': {"vehicleId":"ENGIN_0012","alertType":"OVERSPEEDING","value":"108.7"}
+2026-09-10T13:02:17.185+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] c.s.service.VehicleTelemetryEngine       : Simulator injecting event 'OVERSPEEDING' into vehicle ENGIN_0001
+2026-09-10T13:02:17.187+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <51>
+2026-09-10T13:02:17.188+05:30  INFO 30704 --- [vehicle-simulator-service] [ntLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <standalone-vehicle-simulator-1789025536167> packetID <52>
+2026-09-10T13:02:17.189+05:30  INFO 30704 --- [vehicle-simulator-service] [    Test worker] c.s.service.VehicleTelemetryEngine       : Emitted alert on topic 'alerts/ENGIN_0001': {"vehicleId":"ENGIN_0001","alertType":"OVERSPEEDING","value":"118.0"}
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\lijop\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.19\154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1\byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
